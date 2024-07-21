@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="Newsletter sign-up.css" />
+
+  <title>Newsletter sign-up form with success message</title>
+
+</head>
+<body>
+<div class="wrapper">
+  <div class="container">
+    
+    <div class="innercontainer">
+      <div class="container-left">
+        <img class="i-header" src="./assets/images/illustration-sign-up-mobile.svg" alt="header achtergrond afbeelding">
+        <h1>Stay updated!</h1>
+        <p>Join 60,000+ product managers receiving monthly updates on:</p>
+        <div class="opsomming">
+          <img src="./assets/images/icon-list.svg" alt="Oranje opsommingsvinkje">
+          Product discovery and building what matters</div>
+        <div class="opsomming">
+          <img  src="./assets/images/icon-list.svg" alt="Oranje opsommingsvinkje">
+          Measuring to ensure updates are a success</div>
+        <div class="opsomming">
+          <img  src="./assets/images/icon-list.svg" alt="Oranje opsommingsvinkje">
+          And much more!</div>
+        <div class="email">Email address</div>
+        <input type="email" placeholder="email@company.com" class="inputbar">
+        <input id="subscribeBtn" type="submit" value="Subscribe to monthly newsletter" class="text">
+      </div>
+      <div class="container-right">
+        <img src="./assets/images/illustration-sign-up-desktop.svg" alt="header achtergrond afbeelding">
+      </div>
+    </div>
+      
+
+      <div class="new-message">
+        <div class="message-container">
+          <img src="./assets/images/icon-success.svg" alt="Groot oranje opsommingsvinkje">
+          <h4>Thanks for subscribing!</h4>
+          <p>A confirmation email has been sent to <strong>ash@loremcompany.com.</strong>
+            Please open it and click the button inside to confirm your subscription.</p>
+          <input class="dismiss" type="submit" value="Dismiss message">
+        </div>
+      </div>
+          
+    </div>
+</div>
+
+  <script>
+      document.getElementById('subscribeBtn').addEventListener('click', function() {
+      document.querySelector('.innercontainer').style.display = 'none'; 
+      document.querySelector('.new-message').style.display = 'block'; 
+    });
+
+      document.querySelector('.dismiss').addEventListener('click', function() {
+      document.querySelector('.innercontainer').style.display = 'block'; 
+      document.querySelector('.new-message').style.display = 'none'; 
+    });
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,327 @@
+/* --------------------Basic-----------------------*/
+
+:root {
+    /* - Font size (paragraph): 16px */
+    --font-R: 'Roboto', sana-serif;
+    /*Primary*/
+    --Tomato: hsl(4, 100%, 67%);
+
+        /*Neutral*/
+    --DarkGrey: hsl(234, 29%, 20%);  /*Dark Slate Grey*/
+    --CharcoalGrey: hsl(235, 18%, 26%);
+    --Grey: hsl(231, 7%, 60%);
+    --White: hsl(0, 0%, 100%);
+}
+  
+* {
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+body {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+
+.inputbar:hover {
+    cursor: pointer;
+}
+
+.text:hover {
+    cursor: pointer;
+    background-color: var(--Tomato);
+    background-image: linear-gradient(to right, pink , hsl(4, 100%, 67%) );
+}
+
+.dismiss:hover {
+    cursor: pointer;
+    background-color: var(--Tomato);
+    background-image: linear-gradient(to right, pink , hsl(4, 100%, 67%) );
+}
+
+/* --------------------Mobile 375 px-----------------------*/
+@media only screen and (max-width: 1440px) {
+
+    .container {
+        width: 375px;
+        height: 840px;
+        margin-top: 80px;
+        background-color: white;
+    }
+
+    .innercontainer {
+        width: 360px;
+        margin-left: 20px;
+        padding-right: 20px;
+        font-family: var(--font-R);
+        color: var(--DarkGrey);
+    }
+
+    .i-header {
+        margin-left: -20px;
+    }
+
+    h1 {
+        padding-top: 320px;
+        font-size: 40px;
+    }
+
+    p {
+        padding-top: 20px;
+        margin-bottom: 30px;
+    }
+
+    img {
+        float: left;
+        padding-right: 20px;
+    }
+
+   .opsomming {
+        padding-bottom: 20px;
+   }
+
+   .email {
+        padding-top: 30px;
+        padding-bottom: 10px;
+        font-size: 12px;
+        font-weight: 700;
+   }
+
+   .inputbar {
+        width: 335px;
+        height: 50px;
+        padding-left: 25px;
+        font-size: 16px;
+        border-radius: 10px;
+        border: 1px solid lightgray;
+    }
+
+   .text {
+        width: 335px;
+        height: 60px;
+        margin-top: 25px;
+        font-size: 16px;
+        background-color: var(--DarkGrey);
+        color: var(--White);
+        border: none;
+        border-radius: 10px;
+   }
+
+   .container-right {
+        display: none;
+   }
+
+   .new-message {
+    display: none;
+   }
+
+   .message-container {
+        width: 375px;
+        height: 840px;
+        display: flex;
+        flex-direction: column;
+        margin-top: 80px;
+        background-color: white;
+        color: var(--DarkGrey);
+        font-family: var(--font-R);
+   }
+
+   .message-container img {
+        width: 80px;
+        height: 80px;
+        margin-top: 140px;
+        margin-left: 20px;
+   }
+
+   h4 {
+        font-size: 40px;
+        font-weight: 700;
+        margin-top: 30px;
+        margin-left: 20px;
+   }
+
+   .message-container p {
+        margin-left: 20px;
+        line-height: 1.5;
+   }
+
+   .dismiss {
+        width: 335px;
+        height: 60px;
+        margin-left: 20px;
+        margin-top: 225px;
+        font-size: 16px;
+        background-color: var(--DarkGrey);
+        color: var(--White);
+        border: none;
+        border-radius: 10px;
+   }
+
+}
+
+
+
+/* --------------------Desktop 1440 px-----------------------*/
+@media only screen and (min-width: 1440px) {
+
+    .container {
+        width: 1440px;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--DarkGrey);
+    }
+
+    .innercontainer {
+        width: 1000px;
+        height: 650px;
+        display: flex;
+        background-color: var(--White);
+        font-family: var(--font-R);
+        color: var(--DarkGrey);
+        border-radius: 25px;
+    }
+
+    .container-left {
+        width: 400px;
+        height: 600px;
+        margin-left: 80px;
+    }
+
+    .container-left img {
+        display: inline;
+    }
+
+    img.i-header {
+        display: none;
+    }
+
+    .container-right {
+        flex-direction: row;
+        margin-right: 160px;
+}
+
+    h1 {
+        padding-top: 80px;
+        font-size: 46px;
+    }
+
+    p {
+        padding-top: 20px;
+        margin-bottom: 30px;
+    }
+
+    img {
+        float: left;
+        padding-right: 20px;
+    }
+
+   .opsomming {
+        padding-bottom: 20px;
+   }
+
+   .email {
+        padding-top: 30px;
+        padding-bottom: 10px;
+        font-size: 12px;
+        font-weight: 700;
+   }
+
+   .inputbar {
+        width: 380px;
+        height: 50px;
+        padding-left: 25px;
+        font-size: 16px;
+        border-radius: 10px;
+        border: 1px solid lightgray;
+    }
+
+    .text {
+        width: 380px;
+        height: 60px;
+        margin-top: 25px;
+        font-size: 16px;
+        background-color: var(--DarkGrey);
+        color: var(--White);
+        border: none;
+        border-radius: 10px;
+   }
+
+    .container-right {
+        width: 400px;
+        height: 600px;
+    }
+
+    .container-right img {
+        display: block;
+        width: 430px;
+        margin-top: 20px;
+        margin-left: 85px;
+    }
+
+    .new-message {
+        display: none;
+        width: 1440px;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--DarkGrey);
+       }
+
+    .message-container {
+        width: 350px;
+        height: 350px;
+        display: flex;
+        margin: auto;
+        margin-top: 200px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--White);
+        border-radius: 20px;
+    }
+
+    .message-container img {
+        width: 60px;
+        height: 60px;
+        margin-left: -220px;
+    }
+
+    h4 {
+        font-size: 36px;
+        font-weight: 700;
+        margin-top: 15px;
+        margin-left: 40px;
+    }
+
+    .message-container p {
+        font-size: 12px;
+        margin-left: 40px;
+        margin-right: 40px;
+        line-height: 1.5;
+    }
+
+    .dismiss {
+        width: 270px;
+        height: 30px;       
+        font-size: 12px;
+        margin-top: -8px;
+        background-color: var(--DarkGrey);
+        color: var(--White);
+        border: none;
+        border-radius: 8px;
+    }
+
+    .dismiss:hover {
+        cursor: pointer;
+        background-color: var(--Tomato);
+        background-image: linear-gradient(to right, pink , hsl(4, 100%, 67%) );
+    }
+
+
+    
+}
